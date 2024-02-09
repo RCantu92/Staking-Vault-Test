@@ -26,6 +26,7 @@ contract RedemptionReceiver is OwnableUpgradeable, ERC1155HolderUpgradeable {
     IFortaStaking private _staking;
     IERC20 private _token;
 
+    /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
         _disableInitializers();
     }
